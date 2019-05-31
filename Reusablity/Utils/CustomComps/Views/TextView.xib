@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextView" customModule="Reusablity" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="Syp-Hc-A9a" id="gaK-1m-2MB"/>
+                <outlet property="title" destination="HTr-DS-oHc" id="rGE-el-l8V"/>
+                <outlet property="titleWidthConstraint" destination="jme-wq-h7e" id="Zez-wd-pYN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="25"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ThL-LU-Hff" customClass="PhoneFormattedTextField" customModule="SwiftPhoneNumberFormatter">
+                    <rect key="frame" x="100" y="0.0" width="287" height="25"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Syp-Hc-A9a" customClass="NBTextField" customModule="Reusablity" customModuleProvider="target">
+                    <rect key="frame" x="100" y="0.0" width="287" height="25"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HTr-DS-oHc">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="25"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="jme-wq-h7e"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                    <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="HTr-DS-oHc" secondAttribute="bottom" id="0HK-lc-KC3"/>
+                <constraint firstItem="Syp-Hc-A9a" firstAttribute="trailing" secondItem="ThL-LU-Hff" secondAttribute="trailing" id="7BP-9C-oF8"/>
+                <constraint firstItem="Syp-Hc-A9a" firstAttribute="leading" secondItem="ThL-LU-Hff" secondAttribute="leading" id="951-hs-UBj"/>
+                <constraint firstItem="Syp-Hc-A9a" firstAttribute="top" secondItem="ThL-LU-Hff" secondAttribute="top" id="EmD-Gn-Wga"/>
+                <constraint firstItem="Syp-Hc-A9a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="I7f-eg-kNv"/>
+                <constraint firstItem="HTr-DS-oHc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Kjm-Fg-MoZ"/>
+                <constraint firstItem="HTr-DS-oHc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Mhe-tP-QPu"/>
+                <constraint firstItem="Syp-Hc-A9a" firstAttribute="leading" secondItem="HTr-DS-oHc" secondAttribute="trailing" id="VGT-Kh-gPI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Syp-Hc-A9a" secondAttribute="trailing" id="kel-qt-fzH"/>
+                <constraint firstAttribute="bottom" secondItem="Syp-Hc-A9a" secondAttribute="bottom" id="p4Y-C9-MMf"/>
+                <constraint firstItem="Syp-Hc-A9a" firstAttribute="bottom" secondItem="ThL-LU-Hff" secondAttribute="bottom" id="vJX-4H-rZJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="143.19999999999999" y="439.43028485757122"/>
+        </view>
+    </objects>
+</document>
