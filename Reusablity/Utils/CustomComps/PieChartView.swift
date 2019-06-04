@@ -220,6 +220,7 @@ class PieChartView : UIView {
                         image.backgroundColor = UIColor.white
                         image.kf.indicatorType = .activity
                         image.kf.setImage(with: url)
+                        image.tag = 99
                         image.center = segmentCenter
                         addSubview(image)
                         image.layer.zPosition = 10

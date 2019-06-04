@@ -43,6 +43,11 @@ class GameDisk: UIView {
     
     var users: [User] = [] {
         didSet {
+            for subview in pieChartView.subviews {
+                if subview.tag == 99 {
+                    subview.removeFromSuperview()
+                }
+            }
             var segments = [Segment]()
             for user in users {
                 if let profilePic = user.profilePic {
@@ -61,7 +66,7 @@ class GameDisk: UIView {
         }
     }
     
-     override func awakeFromNib() {
+    override func awakeFromNib() {
         super.awakeFromNib()
         layer.cornerRadius = frame.size.width/2
     }
@@ -103,7 +108,7 @@ class GameDisk: UIView {
         pieChartBackgroundView.layer.cornerRadius = pieChartBackgroundView.frame.width/2
     }
     
-    func nibSetup() {
+    private func nibSetup() {
         backgroundColor = .clear
         if let view = Bundle(for: self.classForCoder).loadNibNamed("GameDisk", owner: self, options: nil)?.first as? UIView{
             view.frame = bounds
