@@ -15,9 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let locationManager = LocationManager.shared
+        locationManager.checkLocation()
+        locationManager.delegate = self
         return true
     }
 
 }
 
+extension AppDelegate: LocationDelegate {
+    func updatedLocation(latitude: String, longitude: String) {
+        print("latitude--",latitude)
+        print("longitude--",longitude)
+    }
+}

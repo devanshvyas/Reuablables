@@ -403,6 +403,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Email"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="securedText" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="keyboardType">
+                                                <integer key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dN1-eB-xo4" customClass="TextView" customModule="Reusablity" customModuleProvider="target">
@@ -413,8 +416,11 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="securedText" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="DOB"/>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isTextField" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Mobile No."/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isTextField" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="keyboardType">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6EX-rs-SyM" customClass="TextView" customModule="Reusablity" customModuleProvider="target">

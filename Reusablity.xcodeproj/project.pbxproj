@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050CE49C22A6AC3E00A7B39B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CE49B22A6AC3E00A7B39B /* LocationManager.swift */; };
 		0576E0BA228D5B0F0050484A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576E0B9228D5B0F0050484A /* AppDelegate.swift */; };
 		0576E0BC228D5B0F0050484A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576E0BB228D5B0F0050484A /* MainViewController.swift */; };
 		0576E0BF228D5B0F0050484A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0576E0BD228D5B0F0050484A /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		050CE49B22A6AC3E00A7B39B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		0576E0B6228D5B0F0050484A /* Reusablity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reusablity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0576E0B9228D5B0F0050484A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0576E0BB228D5B0F0050484A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 		05828B15229E601B00EA66FF /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				050CE49B22A6AC3E00A7B39B /* LocationManager.swift */,
 				05828B16229E602A00EA66FF /* Defaults.swift */,
 			);
 			path = Services;
@@ -362,6 +365,7 @@
 				05B48B5B22A5392B0027EF79 /* BaseViewController.swift in Sources */,
 				057D149022A63C450071EAB2 /* User.swift in Sources */,
 				057D149222A642AF0071EAB2 /* HomeVC.swift in Sources */,
+				050CE49C22A6AC3E00A7B39B /* LocationManager.swift in Sources */,
 				057D148A22A637EA0071EAB2 /* GameDisk.swift in Sources */,
 				057FD22B22A691B500BEF6C8 /* SignUpVC.swift in Sources */,
 				05B48B5922A530970027EF79 /* LoginVC.swift in Sources */,
