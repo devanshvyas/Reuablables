@@ -23,6 +23,9 @@
 		057D149022A63C450071EAB2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D148F22A63C450071EAB2 /* User.swift */; };
 		057D149222A642AF0071EAB2 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D149122A642AF0071EAB2 /* HomeVC.swift */; };
 		057D149322A648750071EAB2 /* GameDisk.xib in Resources */ = {isa = PBXBuildFile; fileRef = 057D148622A637EA0071EAB2 /* GameDisk.xib */; };
+		057FD22622A6904E00BEF6C8 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057FD22522A6904E00BEF6C8 /* DatePicker.swift */; };
+		057FD22922A6911900BEF6C8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057FD22822A6911900BEF6C8 /* Colors.swift */; };
+		057FD22B22A691B500BEF6C8 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057FD22A22A691B500BEF6C8 /* SignUpVC.swift */; };
 		05828B17229E602A00EA66FF /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05828B16229E602A00EA66FF /* Defaults.swift */; };
 		05B48B5722A527460027EF79 /* PopUpBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B48B5622A527460027EF79 /* PopUpBgView.swift */; };
 		05B48B5922A530970027EF79 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B48B5822A530970027EF79 /* LoginVC.swift */; };
@@ -50,6 +53,9 @@
 		057D148D22A63C1C0071EAB2 /* RoundProfilePic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundProfilePic.swift; sourceTree = "<group>"; };
 		057D148F22A63C450071EAB2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		057D149122A642AF0071EAB2 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		057FD22522A6904E00BEF6C8 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		057FD22822A6911900BEF6C8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		057FD22A22A691B500BEF6C8 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		05828B16229E602A00EA66FF /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		05B48B5622A527460027EF79 /* PopUpBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpBgView.swift; sourceTree = "<group>"; };
 		05B48B5822A530970027EF79 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 				0576E0BB228D5B0F0050484A /* MainViewController.swift */,
 				05B48B5A22A5392B0027EF79 /* BaseViewController.swift */,
 				05B48B5822A530970027EF79 /* LoginVC.swift */,
+				057FD22A22A691B500BEF6C8 /* SignUpVC.swift */,
 				057D149122A642AF0071EAB2 /* HomeVC.swift */,
 			);
 			path = Controller;
@@ -135,6 +142,7 @@
 		0576E0CF228D5BC10050484A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				057FD22722A6910B00BEF6C8 /* Consts */,
 				05828B15229E601B00EA66FF /* Services */,
 				0576E0DA228D63440050484A /* Extensions */,
 				0576E0D2228D5CE70050484A /* CustomComps */,
@@ -165,9 +173,9 @@
 				0576E0D3228D5D0C0050484A /* RoundedButton.swift */,
 				057D148B22A6383D0071EAB2 /* PieChartView.swift */,
 				057D148D22A63C1C0071EAB2 /* RoundProfilePic.swift */,
-				0576E0D8228D60490050484A /* TextView.swift */,
 				057D148722A637EA0071EAB2 /* RoundedView.swift */,
 				05B48B5622A527460027EF79 /* PopUpBgView.swift */,
+				057FD22522A6904E00BEF6C8 /* DatePicker.swift */,
 			);
 			path = CustomComps;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				0576E0D6228D602D0050484A /* TextView.xib */,
+				0576E0D8228D60490050484A /* TextView.swift */,
 				057D148822A637EA0071EAB2 /* GameDisk.swift */,
 				057D148622A637EA0071EAB2 /* GameDisk.xib */,
 			);
@@ -189,6 +198,14 @@
 				05CDD28F22A135860033F0BB /* UIViewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		057FD22722A6910B00BEF6C8 /* Consts */ = {
+			isa = PBXGroup;
+			children = (
+				057FD22822A6911900BEF6C8 /* Colors.swift */,
+			);
+			path = Consts;
 			sourceTree = "<group>";
 		};
 		05828B15229E601B00EA66FF /* Services */ = {
@@ -334,6 +351,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0576E0DC228D634F0050484A /* UIView.swift in Sources */,
+				057FD22922A6911900BEF6C8 /* Colors.swift in Sources */,
+				057FD22622A6904E00BEF6C8 /* DatePicker.swift in Sources */,
 				05B48B5722A527460027EF79 /* PopUpBgView.swift in Sources */,
 				057D148C22A6383E0071EAB2 /* PieChartView.swift in Sources */,
 				057D148E22A63C1C0071EAB2 /* RoundProfilePic.swift in Sources */,
@@ -344,6 +363,7 @@
 				057D149022A63C450071EAB2 /* User.swift in Sources */,
 				057D149222A642AF0071EAB2 /* HomeVC.swift in Sources */,
 				057D148A22A637EA0071EAB2 /* GameDisk.swift in Sources */,
+				057FD22B22A691B500BEF6C8 /* SignUpVC.swift in Sources */,
 				05B48B5922A530970027EF79 /* LoginVC.swift in Sources */,
 				0576E0D4228D5DA90050484A /* RoundedButton.swift in Sources */,
 				05CDD29022A135860033F0BB /* UIViewController.swift in Sources */,

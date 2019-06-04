@@ -42,4 +42,7 @@ class LoginVC: BaseViewController {
         }
     }
     
+    @IBAction func cancelPressed(_ sender: RoundedButton) {
+        dismiss(animated: true)
+    }
 }

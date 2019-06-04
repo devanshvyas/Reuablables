@@ -16,7 +16,7 @@ class HomeVC: BaseViewController {
     
     var initialTimer = 5
     var users = [User]()
-    var user = User()
+    
     
     var hideButtons: Bool = true {
         didSet {
@@ -76,7 +76,8 @@ class HomeVC: BaseViewController {
     }
     
     func addUser() {
-        user.profilePic = users.count/2 == 0 ? "https://dummyimage.com/300.png/09f/fff" : "https://dummyimage.com/300.png/09f/fff"
+        let user = User()
+        user.profilePic = "https://randomuser.me/api/portraits/men/\(users.count + 1).jpg"
         users.append(user)
     }
 }

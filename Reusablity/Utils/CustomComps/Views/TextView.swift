@@ -35,7 +35,7 @@ import UIKit
     
     func sharedInit() {
         nibSetup(nibName: "TextView")
-        addLineToView(position: .LINE_POSITION_BOTTOM, color: .white, width: 1)
+        addLineToView(position: .LINE_POSITION_BOTTOM, color: Colors.bottomLine, width: 1)
         let viewTap = UITapGestureRecognizer(target: self, action: #selector(onViewTapped))
         addGestureRecognizer(viewTap)
     }
