@@ -12,13 +12,9 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Sign In"
+        navigationController?.isNavigationBarHidden = true
     }
 
-    @IBAction func signInPressed(_ sender: RoundedButton) {
-        Defaults.shared.setData(key: .isLoggedIn, data: true)
-    }
-    
 }
 
 extension MainViewController {

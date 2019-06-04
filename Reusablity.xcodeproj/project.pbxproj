@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,9 +16,19 @@
 		0576E0D7228D60340050484A /* TextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0576E0D6228D602D0050484A /* TextView.xib */; };
 		0576E0D9228D60490050484A /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576E0D8228D60490050484A /* TextView.swift */; };
 		0576E0DC228D634F0050484A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576E0DB228D634F0050484A /* UIView.swift */; };
+		057D148922A637EA0071EAB2 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D148722A637EA0071EAB2 /* RoundedView.swift */; };
+		057D148A22A637EA0071EAB2 /* GameDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D148822A637EA0071EAB2 /* GameDisk.swift */; };
+		057D148C22A6383E0071EAB2 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D148B22A6383D0071EAB2 /* PieChartView.swift */; };
+		057D148E22A63C1C0071EAB2 /* RoundProfilePic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D148D22A63C1C0071EAB2 /* RoundProfilePic.swift */; };
+		057D149022A63C450071EAB2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D148F22A63C450071EAB2 /* User.swift */; };
+		057D149222A642AF0071EAB2 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D149122A642AF0071EAB2 /* HomeVC.swift */; };
+		057D149322A648750071EAB2 /* GameDisk.xib in Resources */ = {isa = PBXBuildFile; fileRef = 057D148622A637EA0071EAB2 /* GameDisk.xib */; };
 		05828B17229E602A00EA66FF /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05828B16229E602A00EA66FF /* Defaults.swift */; };
-		05828B19229E666700EA66FF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05828B18229E666700EA66FF /* BaseViewController.swift */; };
+		05B48B5722A527460027EF79 /* PopUpBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B48B5622A527460027EF79 /* PopUpBgView.swift */; };
+		05B48B5922A530970027EF79 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B48B5822A530970027EF79 /* LoginVC.swift */; };
+		05B48B5B22A5392B0027EF79 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B48B5A22A5392B0027EF79 /* BaseViewController.swift */; };
 		05CDD29022A135860033F0BB /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CDD28F22A135860033F0BB /* UIViewController.swift */; };
+		E5BBFBF3095E3904CC434411 /* Pods_Reusablity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354731789DEB10B84CE2EA78 /* Pods_Reusablity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +43,21 @@
 		0576E0D6228D602D0050484A /* TextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextView.xib; sourceTree = "<group>"; };
 		0576E0D8228D60490050484A /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		0576E0DB228D634F0050484A /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		057D148622A637EA0071EAB2 /* GameDisk.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameDisk.xib; sourceTree = "<group>"; };
+		057D148722A637EA0071EAB2 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		057D148822A637EA0071EAB2 /* GameDisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDisk.swift; sourceTree = "<group>"; };
+		057D148B22A6383D0071EAB2 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		057D148D22A63C1C0071EAB2 /* RoundProfilePic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundProfilePic.swift; sourceTree = "<group>"; };
+		057D148F22A63C450071EAB2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		057D149122A642AF0071EAB2 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		05828B16229E602A00EA66FF /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
-		05828B18229E666700EA66FF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		05B48B5622A527460027EF79 /* PopUpBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpBgView.swift; sourceTree = "<group>"; };
+		05B48B5822A530970027EF79 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		05B48B5A22A5392B0027EF79 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		05CDD28F22A135860033F0BB /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		354731789DEB10B84CE2EA78 /* Pods_Reusablity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reusablity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27C52972719083BA8EE565E /* Pods-Reusablity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reusablity.debug.xcconfig"; path = "Target Support Files/Pods-Reusablity/Pods-Reusablity.debug.xcconfig"; sourceTree = "<group>"; };
+		FDA35293F1DA12D68038FC2C /* Pods-Reusablity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reusablity.release.xcconfig"; path = "Target Support Files/Pods-Reusablity/Pods-Reusablity.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5BBFBF3095E3904CC434411 /* Pods_Reusablity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +77,8 @@
 			children = (
 				0576E0B8228D5B0F0050484A /* Reusablity */,
 				0576E0B7228D5B0F0050484A /* Products */,
+				BC1E8BCE3BC88695831CEBB0 /* Pods */,
+				6DFAFF6BCB5521607ED9DF1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +107,7 @@
 		0576E0CB228D5B2D0050484A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				057D148F22A63C450071EAB2 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,7 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				0576E0BB228D5B0F0050484A /* MainViewController.swift */,
-				05828B18229E666700EA66FF /* BaseViewController.swift */,
+				05B48B5A22A5392B0027EF79 /* BaseViewController.swift */,
+				05B48B5822A530970027EF79 /* LoginVC.swift */,
+				057D149122A642AF0071EAB2 /* HomeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -135,7 +163,11 @@
 			children = (
 				0576E0D5228D601A0050484A /* Views */,
 				0576E0D3228D5D0C0050484A /* RoundedButton.swift */,
+				057D148B22A6383D0071EAB2 /* PieChartView.swift */,
+				057D148D22A63C1C0071EAB2 /* RoundProfilePic.swift */,
 				0576E0D8228D60490050484A /* TextView.swift */,
+				057D148722A637EA0071EAB2 /* RoundedView.swift */,
+				05B48B5622A527460027EF79 /* PopUpBgView.swift */,
 			);
 			path = CustomComps;
 			sourceTree = "<group>";
@@ -144,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				0576E0D6228D602D0050484A /* TextView.xib */,
+				057D148822A637EA0071EAB2 /* GameDisk.swift */,
+				057D148622A637EA0071EAB2 /* GameDisk.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +199,23 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		6DFAFF6BCB5521607ED9DF1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				354731789DEB10B84CE2EA78 /* Pods_Reusablity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC1E8BCE3BC88695831CEBB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C27C52972719083BA8EE565E /* Pods-Reusablity.debug.xcconfig */,
+				FDA35293F1DA12D68038FC2C /* Pods-Reusablity.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0576E0C8228D5B130050484A /* Build configuration list for PBXNativeTarget "Reusablity" */;
 			buildPhases = (
+				A391B04F9D5ACE24BE5DF1B4 /* [CP] Check Pods Manifest.lock */,
 				0576E0B2228D5B0F0050484A /* Sources */,
 				0576E0B3228D5B0F0050484A /* Frameworks */,
 				0576E0B4228D5B0F0050484A /* Resources */,
+				A8AE75B03F89B0D15F97BB12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0576E0C4228D5B130050484A /* LaunchScreen.storyboard in Resources */,
+				057D149322A648750071EAB2 /* GameDisk.xib in Resources */,
 				0576E0D7228D60340050484A /* TextView.xib in Resources */,
 				0576E0C1228D5B130050484A /* Assets.xcassets in Resources */,
 				0576E0BF228D5B0F0050484A /* Main.storyboard in Resources */,
@@ -232,18 +286,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A391B04F9D5ACE24BE5DF1B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reusablity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8AE75B03F89B0D15F97BB12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reusablity/Pods-Reusablity-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reusablity/Pods-Reusablity-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reusablity/Pods-Reusablity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0576E0B2228D5B0F0050484A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0576E0DC228D634F0050484A /* UIView.swift in Sources */,
+				05B48B5722A527460027EF79 /* PopUpBgView.swift in Sources */,
+				057D148C22A6383E0071EAB2 /* PieChartView.swift in Sources */,
+				057D148E22A63C1C0071EAB2 /* RoundProfilePic.swift in Sources */,
 				0576E0BC228D5B0F0050484A /* MainViewController.swift in Sources */,
 				0576E0D9228D60490050484A /* TextView.swift in Sources */,
 				05828B17229E602A00EA66FF /* Defaults.swift in Sources */,
+				05B48B5B22A5392B0027EF79 /* BaseViewController.swift in Sources */,
+				057D149022A63C450071EAB2 /* User.swift in Sources */,
+				057D149222A642AF0071EAB2 /* HomeVC.swift in Sources */,
+				057D148A22A637EA0071EAB2 /* GameDisk.swift in Sources */,
+				05B48B5922A530970027EF79 /* LoginVC.swift in Sources */,
 				0576E0D4228D5DA90050484A /* RoundedButton.swift in Sources */,
-				05828B19229E666700EA66FF /* BaseViewController.swift in Sources */,
 				05CDD29022A135860033F0BB /* UIViewController.swift in Sources */,
+				057D148922A637EA0071EAB2 /* RoundedView.swift in Sources */,
 				0576E0BA228D5B0F0050484A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +492,7 @@
 		};
 		0576E0C9228D5B130050484A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C27C52972719083BA8EE565E /* Pods-Reusablity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -405,6 +510,7 @@
 		};
 		0576E0CA228D5B130050484A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDA35293F1DA12D68038FC2C /* Pods-Reusablity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

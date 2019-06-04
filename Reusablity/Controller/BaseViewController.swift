@@ -9,9 +9,31 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-
+    
+    @IBOutlet weak var blurView: UIView?
+    
+    private var activityIndicator: UIActivityIndicatorView?
+    var isLoading: Bool = false {
+        didSet {
+            if isLoading {
+                activityIndicator?.startAnimating()
+            } else {
+                activityIndicator?.stopAnimating()
+            }
+            view.isUserInteractionEnabled = !isLoading
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        blurView?.overlayBlurredBackgroundView()
+        activityIndicator = getActivityMonitor(view: view)
+    }
+    
+    func navigateToHome(nav: UINavigationController?) {
+        guard let homeVC = storyboard?.instantiateViewController(withIdentifier: "HomeVC") else { return }
+        print("not returned!")
+        nav?.pushViewController(homeVC, animated: true)
     }
     
 }
