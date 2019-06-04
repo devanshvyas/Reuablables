@@ -8,11 +8,12 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
+        checkLoggedIn()
     }
 
 }
@@ -20,7 +21,7 @@ class MainViewController: UIViewController {
 extension MainViewController {
     func checkLoggedIn() {
         if let isLoggedIn = Defaults.shared.getData(key: .isLoggedIn) as? Bool, isLoggedIn {
-            
+            navigateToHome(nav: navigationController)
         }
     }
 }

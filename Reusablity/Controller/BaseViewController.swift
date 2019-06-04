@@ -26,6 +26,7 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
         blurView?.overlayBlurredBackgroundView()
         activityIndicator = getActivityMonitor(view: view)
     }
@@ -33,7 +34,7 @@ class BaseViewController: UIViewController {
     func navigateToHome(nav: UINavigationController?) {
         guard let homeVC = storyboard?.instantiateViewController(withIdentifier: "HomeVC") else { return }
         print("not returned!")
-        nav?.pushViewController(homeVC, animated: true)
+        nav?.pushViewController(homeVC, animated: false)
     }
     
 }
