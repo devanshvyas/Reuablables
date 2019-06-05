@@ -112,7 +112,7 @@ class PieChartView : UIView {
         didSet { setNeedsDisplay() }
     }
     
-    let grayShades: [UIColor] = [UIColor(red: 42/255, green: 42/255, blue: 42/255, alpha: 1), UIColor.darkGray, UIColor.gray, UIColor.lightGray, UIColor(red: 211/255, green: 211/255, blue: 211/255, alpha: 1)]
+    let grayShades: [UIColor] = [Colors.chartGrayDark, UIColor.darkGray, UIColor.gray, UIColor.lightGray, Colors.chartGrayLight]
     
     private let paragraphStyle: NSParagraphStyle = {
         var p = NSMutableParagraphStyle()

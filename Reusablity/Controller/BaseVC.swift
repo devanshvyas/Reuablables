@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseVC: UIViewController {
     
     @IBOutlet weak var blurView: UIView?
     
@@ -29,6 +29,7 @@ class BaseViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
         blurView?.overlayBlurredBackgroundView()
         activityIndicator = getActivityMonitor(view: view)
+        hideKeyboardGesture()
     }
     
     func navigateToHome(nav: UINavigationController?) {

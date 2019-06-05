@@ -14,8 +14,8 @@ protocol LocationDelegate {
 }
 
 class LocationManager: NSObject {
-    
     static let shared = LocationManager()
+    
     let manager = CLLocationManager()
     var latitude: String?
     var longitude: String?

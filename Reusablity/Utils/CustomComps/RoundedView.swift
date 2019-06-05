@@ -32,17 +32,17 @@ import UIKit
     //MARK:- Private setter helper
     
     fileprivate func updateBorderWidth(_ value: CGFloat) {
-        self.layer.borderWidth = value
+        layer.borderWidth = value
     }
     
     fileprivate func updateBorderColor(_ value: UIColor) {
-        self.layer.borderColor = value.cgColor
+        layer.borderColor = value.cgColor
     }
     
     fileprivate func updateCornerRadius(_ value: CGFloat) {
-        self.layer.masksToBounds = false
-        self.clipsToBounds = true
-        self.layer.cornerRadius = value
+        layer.masksToBounds = false
+        clipsToBounds = true
+        layer.cornerRadius = value
     }
     
     //MARK:- Inspectable properties

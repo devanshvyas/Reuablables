@@ -74,12 +74,12 @@ class GameDisk: UIView {
     //# MARK: - Initializer
     override init(frame: CGRect) {
         super.init(frame: frame)
-        nibSetup()
+        nibSetup(nibName: "GameDisk")
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        nibSetup()
+        nibSetup(nibName: "GameDisk")
     }
     
     //# MARK: - Private methods
@@ -108,14 +108,4 @@ class GameDisk: UIView {
         pieChartBackgroundView.layer.cornerRadius = pieChartBackgroundView.frame.width/2
     }
     
-    private func nibSetup() {
-        backgroundColor = .clear
-        if let view = Bundle(for: self.classForCoder).loadNibNamed("GameDisk", owner: self, options: nil)?.first as? UIView{
-            view.frame = bounds
-            view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-            view.translatesAutoresizingMaskIntoConstraints = true
-            view.isUserInteractionEnabled = false
-            addSubview(view)
-        }
-    }
 }

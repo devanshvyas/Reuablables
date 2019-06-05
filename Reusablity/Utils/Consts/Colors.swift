@@ -22,4 +22,6 @@ enum Colors {
     static let filterOn = UIColor(red:0.33, green:0.33, blue:0.33, alpha:1.0)
     static let paymentGray = UIColor(red:0.44, green:0.44, blue:0.44, alpha:1.0)
     static let popUpTitle = UIColor(red:0.76, green:0.76, blue:0.76, alpha:1.0)
+    static let chartGrayDark = UIColor(red: 42/255, green: 42/255, blue: 42/255, alpha: 1)
+    static let chartGrayLight = UIColor(red: 211/255, green: 211/255, blue: 211/255, alpha: 1)
 }

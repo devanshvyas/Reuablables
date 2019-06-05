@@ -8,13 +8,13 @@
 
 import UIKit
 
-class HomeVC: BaseViewController {
+class HomeVC: BaseVC {
 
     @IBOutlet weak var gameView: GameDisk!
     @IBOutlet weak var addRemoveView: UIStackView!
     @IBOutlet weak var resultButton: RoundedButton!
     
-    var initialTimer = 5
+    var initialTimer = 10
     var users = [User]()
     
     
@@ -50,7 +50,7 @@ class HomeVC: BaseViewController {
             users.removeLast()
         }
         gameView.users = users
-        initialTimer = 5
+        initialTimer = 10
         startGame(type: .getReadyTieBreaker)
     }
     
@@ -77,7 +77,7 @@ class HomeVC: BaseViewController {
     
     func addUser() {
         let user = User()
-        user.profilePic = "https://randomuser.me/api/portraits/men/\(users.count + 1).jpg"
+        user.profilePic = "https://randomuser.me/api/portraits/men/\(users.count).jpg"
         users.append(user)
     }
 }

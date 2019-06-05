@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginVC: BaseViewController {
+class LoginVC: BaseVC {
 
     @IBOutlet weak var email: TextView!
     @IBOutlet weak var password: TextView!

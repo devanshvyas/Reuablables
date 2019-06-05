@@ -22,11 +22,11 @@ import UIKit
     }
     
     func sharedInit() {
-        self.backgroundColor = UIColor(red: 0.15, green: 0.15, blue: 0.15, alpha: 1.0)
-        self.layer.shadowOpacity = Float(0.75)
-        self.layer.masksToBounds = false
-        self.layer.shadowOffset = CGSize(width: 0, height: 3)
-        self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75).cgColor
+        backgroundColor = Colors.popUpBg
+        layer.shadowOpacity = Float(0.75)
+        layer.masksToBounds = false
+        layer.shadowOffset = CGSize(width: 0, height: 3)
+        layer.shadowColor = Colors.popUpShadow
         updateShadowWidth(shadowWidth)
         updateBorderColor(borderColor)
         updateCornerRadius(cornerRadius)
@@ -35,15 +35,15 @@ import UIKit
     //MARK:- Private setter helper
     
     fileprivate func updateShadowWidth(_ value: CGFloat) {
-        self.layer.shadowRadius = value
+        layer.shadowRadius = value
     }
     
     fileprivate func updateBorderColor(_ value: UIColor) {
-        self.layer.borderColor = value.cgColor
+        layer.borderColor = value.cgColor
     }
     
     fileprivate func updateCornerRadius(_ value: CGFloat) {
-        self.layer.cornerRadius = value
+        layer.cornerRadius = value
     }
     
     
@@ -61,7 +61,7 @@ import UIKit
         }
     }
     
-    @IBInspectable var borderColor : UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75) {
+    @IBInspectable var borderColor : UIColor = Colors.popUpBgBorder {
         didSet {
             updateBorderColor(borderColor)
         }
