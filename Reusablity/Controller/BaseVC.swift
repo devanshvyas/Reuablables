@@ -34,8 +34,11 @@ class BaseVC: UIViewController {
     
     func navigateToHome(nav: UINavigationController?) {
         guard let homeVC = storyboard?.instantiateViewController(withIdentifier: "HomeVC") else { return }
-        print("not returned!")
         nav?.pushViewController(homeVC, animated: false)
     }
     
+    func navigateToTimeline(nav: UINavigationController?) {
+        guard let timelineVC = storyboard?.instantiateViewController(withIdentifier: "TimelineVC") else { return }
+        nav?.pushViewController(timelineVC, animated: false)
+    }
 }

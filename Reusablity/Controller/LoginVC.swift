@@ -31,7 +31,7 @@ class LoginVC: BaseVC {
                 Defaults.shared.setData(key: .isLoggedIn, data: true)
                 let nav = self.presentingViewController as? UINavigationController
                 self.dismiss(animated: true, completion: {
-                    self.navigateToHome(nav: nav)
+                    self.navigateToTimeline(nav: nav)
                 })
             }
         } else {

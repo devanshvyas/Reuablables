@@ -74,12 +74,12 @@ class GameDisk: UIView {
     //# MARK: - Initializer
     override init(frame: CGRect) {
         super.init(frame: frame)
-        nibSetup(nibName: "GameDisk")
+        nibSetup(nibName: .GameDisk)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        nibSetup(nibName: "GameDisk")
+        nibSetup(nibName: .GameDisk)
     }
     
     //# MARK: - Private methods

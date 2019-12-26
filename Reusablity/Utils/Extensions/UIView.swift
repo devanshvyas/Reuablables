@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum NibNames: String {
+    case TimelineView
+    case GameDisk
+    case TextView
+}
+
 extension UIView {
     
     //MARK: To add line to view:-
@@ -49,10 +55,10 @@ extension UIView {
     
     
     //MARK: To load nib
-    func nibSetup(nibName: String) {
+    func nibSetup(nibName: NibNames) {
         backgroundColor = .clear
         
-        let view = Bundle(for: self.classForCoder).loadNibNamed(nibName, owner: self, options: nil)?.first as! UIView
+        let view = Bundle(for: self.classForCoder).loadNibNamed(nibName.rawValue, owner: self, options: nil)?.first as! UIView
         view.frame = bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.translatesAutoresizingMaskIntoConstraints = true

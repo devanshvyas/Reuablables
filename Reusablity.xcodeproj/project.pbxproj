@@ -32,6 +32,14 @@
 		05B48B5922A530970027EF79 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B48B5822A530970027EF79 /* LoginVC.swift */; };
 		05B48B5B22A5392B0027EF79 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B48B5A22A5392B0027EF79 /* BaseVC.swift */; };
 		05CDD29022A135860033F0BB /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CDD28F22A135860033F0BB /* UIViewController.swift */; };
+		1A66000D23B4D21800C17DDB /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66000623B4D17A00C17DDB /* TimelineView.swift */; };
+		1A66000E23B4D21800C17DDB /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66000723B4D17A00C17DDB /* TimelineCell.swift */; };
+		1A66000F23B4D21800C17DDB /* TimelineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A66000823B4D17A00C17DDB /* TimelineView.xib */; };
+		1A66001023B4D21800C17DDB /* TimelineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A66000923B4D17A00C17DDB /* TimelineCell.xib */; };
+		1A66001123B4D21800C17DDB /* DottedLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66000A23B4D17A00C17DDB /* DottedLine.swift */; };
+		1A66001323B4D29A00C17DDB /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66001223B4D29A00C17DDB /* Timeline.swift */; };
+		1A66001523B4D3B700C17DDB /* UITableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66001423B4D3B700C17DDB /* UITableview.swift */; };
+		1A66001723B4D4E800C17DDB /* TimelineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66001623B4D4E800C17DDB /* TimelineVC.swift */; };
 		C1B51B71A3A594CE27469579 /* Pods_Reusablity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950E2574B6CBAAAF705670A8 /* Pods_Reusablity.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +71,14 @@
 		05B48B5822A530970027EF79 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		05B48B5A22A5392B0027EF79 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		05CDD28F22A135860033F0BB /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		1A66000623B4D17A00C17DDB /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		1A66000723B4D17A00C17DDB /* TimelineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
+		1A66000823B4D17A00C17DDB /* TimelineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineView.xib; sourceTree = "<group>"; };
+		1A66000923B4D17A00C17DDB /* TimelineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineCell.xib; sourceTree = "<group>"; };
+		1A66000A23B4D17A00C17DDB /* DottedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DottedLine.swift; sourceTree = "<group>"; };
+		1A66001223B4D29A00C17DDB /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		1A66001423B4D3B700C17DDB /* UITableview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableview.swift; sourceTree = "<group>"; };
+		1A66001623B4D4E800C17DDB /* TimelineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineVC.swift; sourceTree = "<group>"; };
 		4DD89BDC0A290CB705030A9E /* Pods-Reusablity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reusablity.debug.xcconfig"; path = "Target Support Files/Pods-Reusablity/Pods-Reusablity.debug.xcconfig"; sourceTree = "<group>"; };
 		59338CBE9C8CF65D60C4DC86 /* Pods-Reusablity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reusablity.release.xcconfig"; path = "Target Support Files/Pods-Reusablity/Pods-Reusablity.release.xcconfig"; sourceTree = "<group>"; };
 		950E2574B6CBAAAF705670A8 /* Pods_Reusablity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reusablity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +131,7 @@
 		0576E0CB228D5B2D0050484A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1A66001223B4D29A00C17DDB /* Timeline.swift */,
 				057D148F22A63C450071EAB2 /* User.swift */,
 			);
 			path = Model;
@@ -136,6 +153,7 @@
 				05B48B5A22A5392B0027EF79 /* BaseVC.swift */,
 				05B48B5822A530970027EF79 /* LoginVC.swift */,
 				057FD22A22A691B500BEF6C8 /* SignUpVC.swift */,
+				1A66001623B4D4E800C17DDB /* TimelineVC.swift */,
 				057D149122A642AF0071EAB2 /* HomeVC.swift */,
 			);
 			path = Controller;
@@ -145,8 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				057FD22722A6910B00BEF6C8 /* Consts */,
-				05828B15229E601B00EA66FF /* Services */,
 				0576E0DA228D63440050484A /* Extensions */,
+				05828B15229E601B00EA66FF /* Services */,
 				0576E0D2228D5CE70050484A /* CustomComps */,
 			);
 			path = Utils;
@@ -185,10 +203,9 @@
 		0576E0D5228D601A0050484A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0576E0D6228D602D0050484A /* TextView.xib */,
-				0576E0D8228D60490050484A /* TextView.swift */,
-				057D148822A637EA0071EAB2 /* GameDisk.swift */,
-				057D148622A637EA0071EAB2 /* GameDisk.xib */,
+				1A66000C23B4D19200C17DDB /* GameDisk */,
+				1A66000B23B4D18A00C17DDB /* TextView */,
+				1A66000523B4D17A00C17DDB /* Timeline */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +213,7 @@
 		0576E0DA228D63440050484A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1A66001423B4D3B700C17DDB /* UITableview.swift */,
 				0576E0DB228D634F0050484A /* UIView.swift */,
 				05CDD28F22A135860033F0BB /* UIViewController.swift */,
 			);
@@ -217,6 +235,36 @@
 				05828B16229E602A00EA66FF /* Defaults.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		1A66000523B4D17A00C17DDB /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				1A66000623B4D17A00C17DDB /* TimelineView.swift */,
+				1A66000723B4D17A00C17DDB /* TimelineCell.swift */,
+				1A66000823B4D17A00C17DDB /* TimelineView.xib */,
+				1A66000923B4D17A00C17DDB /* TimelineCell.xib */,
+				1A66000A23B4D17A00C17DDB /* DottedLine.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		1A66000B23B4D18A00C17DDB /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				0576E0D6228D602D0050484A /* TextView.xib */,
+				0576E0D8228D60490050484A /* TextView.swift */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		1A66000C23B4D19200C17DDB /* GameDisk */ = {
+			isa = PBXGroup;
+			children = (
+				057D148822A637EA0071EAB2 /* GameDisk.swift */,
+				057D148622A637EA0071EAB2 /* GameDisk.xib */,
+			);
+			path = GameDisk;
 			sourceTree = "<group>";
 		};
 		86D98FBB5BBF9EDBED030165 /* Frameworks */ = {
@@ -299,8 +347,10 @@
 				0576E0C4228D5B130050484A /* LaunchScreen.storyboard in Resources */,
 				057D149322A648750071EAB2 /* GameDisk.xib in Resources */,
 				0576E0D7228D60340050484A /* TextView.xib in Resources */,
+				1A66000F23B4D21800C17DDB /* TimelineView.xib in Resources */,
 				0576E0C1228D5B130050484A /* Assets.xcassets in Resources */,
 				0576E0BF228D5B0F0050484A /* Main.storyboard in Resources */,
+				1A66001023B4D21800C17DDB /* TimelineCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +408,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A66001323B4D29A00C17DDB /* Timeline.swift in Sources */,
+				1A66001523B4D3B700C17DDB /* UITableview.swift in Sources */,
 				0576E0DC228D634F0050484A /* UIView.swift in Sources */,
+				1A66000D23B4D21800C17DDB /* TimelineView.swift in Sources */,
 				057FD22922A6911900BEF6C8 /* Colors.swift in Sources */,
 				057FD22622A6904E00BEF6C8 /* DatePicker.swift in Sources */,
 				05B48B5722A527460027EF79 /* PopUpBgView.swift in Sources */,
@@ -371,11 +424,14 @@
 				057D149022A63C450071EAB2 /* User.swift in Sources */,
 				057D149222A642AF0071EAB2 /* HomeVC.swift in Sources */,
 				050CE49C22A6AC3E00A7B39B /* LocationManager.swift in Sources */,
+				1A66001123B4D21800C17DDB /* DottedLine.swift in Sources */,
 				057D148A22A637EA0071EAB2 /* GameDisk.swift in Sources */,
 				057FD22B22A691B500BEF6C8 /* SignUpVC.swift in Sources */,
+				1A66000E23B4D21800C17DDB /* TimelineCell.swift in Sources */,
 				05B48B5922A530970027EF79 /* LoginVC.swift in Sources */,
 				0576E0D4228D5DA90050484A /* RoundedButton.swift in Sources */,
 				05CDD29022A135860033F0BB /* UIViewController.swift in Sources */,
+				1A66001723B4D4E800C17DDB /* TimelineVC.swift in Sources */,
 				057D148922A637EA0071EAB2 /* RoundedView.swift in Sources */,
 				0576E0BA228D5B0F0050484A /* AppDelegate.swift in Sources */,
 			);

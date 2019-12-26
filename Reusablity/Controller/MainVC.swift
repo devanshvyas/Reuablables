@@ -18,7 +18,7 @@ class MainVC: BaseVC {
 extension MainVC {
     func checkLoggedIn() {
         if let isLoggedIn = Defaults.shared.getData(key: .isLoggedIn) as? Bool, isLoggedIn {
-            navigateToHome(nav: navigationController)
+            navigateToTimeline(nav: navigationController)
         }
     }
 }

@@ -22,7 +22,7 @@ import UIKit
     }
     
     func sharedInit() {
-        backgroundColor = Colors.popUpBg
+//        backgroundColor = Colors.popUpBg
         layer.shadowOpacity = Float(0.75)
         layer.masksToBounds = false
         layer.shadowOffset = CGSize(width: 0, height: 3)

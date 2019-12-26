@@ -10,9 +10,7 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let locationManager = LocationManager.shared
@@ -20,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         locationManager.delegate = self
         return true
     }
-
 }
 
 extension AppDelegate: LocationDelegate {
