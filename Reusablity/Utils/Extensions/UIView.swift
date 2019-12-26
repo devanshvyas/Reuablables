@@ -17,12 +17,12 @@ enum NibNames: String {
 extension UIView {
     
     //MARK: To add line to view:-
-    enum LINE_POSITION {
-        case LINE_POSITION_TOP
-        case LINE_POSITION_BOTTOM
+    enum LinePosition {
+        case top
+        case bottom
     }
     
-    func addLineToView(position : LINE_POSITION, color: UIColor, width: Double) {
+    func addLineToView(position : LinePosition, color: UIColor, width: Double) {
         let lineView = UIView()
         lineView.backgroundColor = color
         lineView.translatesAutoresizingMaskIntoConstraints = false // This is important!
@@ -33,10 +33,10 @@ extension UIView {
         self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[lineView]|", options:NSLayoutConstraint.FormatOptions(rawValue: 0), metrics:metrics, views:views))
         
         switch position {
-        case .LINE_POSITION_TOP:
+        case .top:
             self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[lineView(width)]", options:NSLayoutConstraint.FormatOptions(rawValue: 0), metrics:metrics, views:views))
             break
-        case .LINE_POSITION_BOTTOM:
+        case .bottom:
             self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[lineView(width)]|", options:NSLayoutConstraint.FormatOptions(rawValue: 0), metrics:metrics, views:views))
             break
         }
@@ -57,8 +57,7 @@ extension UIView {
     //MARK: To load nib
     func nibSetup(nibName: NibNames) {
         backgroundColor = .clear
-        
-        let view = Bundle(for: self.classForCoder).loadNibNamed(nibName.rawValue, owner: self, options: nil)?.first as! UIView
+        guard let view = Bundle(for: self.classForCoder).loadNibNamed(nibName.rawValue, owner: self, options: nil)?.first as? UIView else { return }
         view.frame = bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.translatesAutoresizingMaskIntoConstraints = true
